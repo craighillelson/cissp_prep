@@ -1,17 +1,31 @@
-# import json
-
-# define lambda and function
+# define lambda and functions
 rtn = lambda : '\n'
 
-def choice(a):
+def choice_switch(a):
 	switcher = {
 		'a': 'osi layers',
 		'b': 'firewalls',
 		'c': 'bcp',
 		'd': 'biometrics',
-		'e': 'session_layer_protocols',
+		'e': 'data link layer protocols',
+		'f': 'session layer protocols',
+		'g': 'security models',
+		'h': 'ideal',
 	}
-	return switcher.get(a)
+	return switcher.get(a, 'none')
+
+def value_switch(a):
+	switcher = {
+		'osi layers': osi,
+		'firewalls': firewalls,
+		'bcp': bcp,
+		'biometrics': biometrics,
+		'data link layer protocols': data_link_layer_protocols,
+		'session layer protocols': session_layer_protocols,
+		'security models': security_models,
+		'ideal': ideal,
+	}
+	return switcher.get(a, 'none')
 
 def quiz(a):
 	print(rtn())
@@ -32,6 +46,7 @@ def print_list():
 	for item in lst:
 		print(item)
 
+# import csvs
 # build lists
 osi = [
 	'application',
@@ -70,10 +85,45 @@ biometrics = [
 	'voice pattern recognition',
 	]
 
+data_link_layer_protocols = [
+	'SLIP',
+	'PPP',
+	'ARP',
+	'RARP',
+	'L2F',
+	'L2TP',
+	'PPTP',
+	'ISDN',
+]
+
 session_layer_protocols = [
 	'NFS',
 	'SQL',
 	'RPC',
+]
+
+security_models = [
+	'security_models',
+	'trusted computer base',
+	'state machine',
+	'information flow',
+	'noninterference',
+	'take-grant',
+	'bell-lapadula',
+	'biba',
+	'clark-wilson',
+	'brewer and nash (aka chinese wall)',
+	'goguen-meseguer',
+	'sutherland',
+	'graham-denning',
+]
+
+ideal = [
+	'initiating',
+	'diagnosing',
+	'establishing',
+	'acting',
+	'learning',
 ]
 
 corrects = []
@@ -82,24 +132,11 @@ lst = []
 
 # prompt user
 # validate user input
-topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. session layer protocols ")
+topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model ")
 
 # run function
-value = choice(topic)
-
-# print(value)
-
-if value == 'osi layers':
-	a = osi
-elif value == 'firewalls':
-	a = firewalls
-elif value == 'bcp':
-	a = bcp
-elif value = 'biometrics':
-	a = biometrics
-else:
-	a = session_layer_protocols 
-	
+value = choice_switch(topic)
+a = value_switch(value)
 
 # loop through list, ask user to name all of them items in lst
 # if user answers correctly, add that answer to the corrects list and remove same from lst
