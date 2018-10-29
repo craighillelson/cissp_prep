@@ -12,6 +12,7 @@ def choice_switch(a):
 		'g': 'security models',
 		'h': 'ideal',
 		'i': 'private sector classifications',
+		'j': 'access controls',
 	}
 	return switcher.get(a, 'none')
 
@@ -21,10 +22,12 @@ def value_switch(a):
 		'firewalls': firewalls,
 		'bcp': bcp,
 		'biometrics': biometrics,
+		'data link layer protocols': data_link_layer_protocols,
 		'session layer protocols': session_layer_protocols,
 		'security models': security_models,
 		'ideal': ideal,
 		'private sector classifications': private_sector_classifications,
+		'access controls': access_controls,
 	}
 	return switcher.get(a, 'none')
 
@@ -84,7 +87,7 @@ biometrics = [
 	'retina scans',
 	'signature dynamics',
 	'voice pattern recognition',
-	]
+]
 
 data_link_layer_protocols = [
 	'SLIP',
@@ -134,15 +137,22 @@ private_sector_classifications = [
 	'confidential',
 ]
 
+access_controls = [
+	'role-based access control',
+	'rule-based access control',
+	'mandatory access control',
+	'discretionary access control',
+]
+
 corrects = []
 incorrects = []
 lst = []
 
 # prompt user
 # validate user input
-topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. private sector classifications ")
+topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. privte sector classifications\nj. access controls ")
 
-# run function
+# run functions
 value = choice_switch(topic)
 a = value_switch(value)
 
@@ -164,5 +174,7 @@ elif len(incorrects) == 1:
 else:
 	print("Items for Review".upper())
 	print_list()
+
+# write results to a file
 
 print(rtn())
