@@ -11,6 +11,7 @@ def choice_switch(a):
 		'f': 'session layer protocols',
 		'g': 'security models',
 		'h': 'ideal',
+		'i': 'private sector classifications',
 	}
 	return switcher.get(a, 'none')
 
@@ -20,10 +21,10 @@ def value_switch(a):
 		'firewalls': firewalls,
 		'bcp': bcp,
 		'biometrics': biometrics,
-		'data link layer protocols': data_link_layer_protocols,
 		'session layer protocols': session_layer_protocols,
 		'security models': security_models,
 		'ideal': ideal,
+		'private sector classifications': private_sector_classifications,
 	}
 	return switcher.get(a, 'none')
 
@@ -126,13 +127,20 @@ ideal = [
 	'learning',
 ]
 
+private_sector_classifications = [
+	'public',
+	'sensitive',
+	'private',
+	'confidential',
+]
+
 corrects = []
 incorrects = []
 lst = []
 
 # prompt user
 # validate user input
-topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model ")
+topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. private sector classifications ")
 
 # run function
 value = choice_switch(topic)
