@@ -65,7 +65,6 @@ from lists import *
 
 # prompt user
 # validate user input
-# topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. privte sector classifications\nj. access controls\nk. aaa services\nl. defense in depth\nm. cryptographic attacks ")
 print(rtn())
 print("choices".upper())
 for k, v in choices.items():
