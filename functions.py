@@ -43,15 +43,3 @@ def quiz(a):
 def print_list():
 	for item in lst:
 		print(item)
-
-'''
-def results_logic():
-	if len(incorrects) == 0:
-		print("100%. Great job!")
-	elif len(incorrects) == 1:
-		print("Item for Review".upper())
-		funcions.print_list()
-	else:
-		print("Items for Review".upper())
-		functions.print_list()
-'''

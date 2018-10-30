@@ -25,6 +25,71 @@ osi = [
 	'physical',  
 ]
 
+application_layer_protocols = [
+	'HTTP',
+	'FTP',
+	'LPD',
+	'SMTP',
+	'Telnet',
+	'TFTP',
+	'EDI',
+	'POP3',
+	'IMAP',
+	'SNMP',
+	'NNTP',
+	'S-RPC',
+	'SET',
+]
+
+presentation = [
+	'ASCII',
+	'EBCDICM',
+	'TIFF',
+	'JPEG',
+	'MPEG',
+	'MIDI',
+]
+
+trasnport = [
+	'TCP',
+	'UDP',
+	'SPX',
+	'SSL',
+	'TLS',
+]
+
+network = [
+	'ICMP',
+	'RIP',
+	'OSPF',
+	'BGP',
+	'IGMP',
+	'IP',
+	'IPSec',
+	'IPX',
+	'NAT',
+	'SKIP',
+]
+
+data_link_layer_protocols = [
+	'SLIP',
+	'PPP',
+	'ARP',
+	'RARP',
+	'L2F',
+	'L2TP',
+	'PPTP',
+	'ISDN',
+]
+
+physical = [
+	'EIA/TIA-232 and EIA/TIA-449',
+	'X.21',
+	'HSSI',
+	'SONET',
+	'V.24 and V.35',
+]
+
 firewalls = [
 	'static packet filtering',
 	'application-level gateway',
@@ -121,71 +186,6 @@ cryptographic_attacks = [
 	'man in the middle',
 	'birthday',
 	'replay',
-]
-
-application_layer_protocols = [
-	'HTTP',
-	'FTP',
-	'LPD',
-	'SMTP',
-	'Telnet',
-	'TFTP',
-	'EDI',
-	'POP3',
-	'IMAP',
-	'SNMP',
-	'NNTP',
-	'S-RPC',
-	'SET',
-]
-
-presentation = [
-	'ASCII',
-	'EBCDICM',
-	'TIFF',
-	'JPEG',
-	'MPEG',
-	'MIDI',
-]
-
-trasnport = [
-	'TCP',
-	'UDP',
-	'SPX',
-	'SSL',
-	'TLS',
-]
-
-network = [
-	'ICMP',
-	'RIP',
-	'OSPF',
-	'BGP',
-	'IGMP',
-	'IP',
-	'IPSec',
-	'IPX',
-	'NAT',
-	'SKIP',
-]
-
-data_link_layer_protocols = [
-	'SLIP',
-	'PPP',
-	'ARP',
-	'RARP',
-	'L2F',
-	'L2TP',
-	'PPTP',
-	'ISDN',
-]
-
-physical = [
-	'EIA/TIA-232 and EIA/TIA-449',
-	'X.21',
-	'HSSI',
-	'SONET',
-	'V.24 and V.35',
 ]
 
 corrects = []
