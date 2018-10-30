@@ -6,3 +6,4 @@ DoS,a type of attack that prevents a system from processing or responding to leg
 DDoS,distributed denial of service
 spoofing,an attack with the goal of gaining access to a target system through the use of a falsified identity
 man in the middle,a malicious individual sits between two communicating parties and intercepts all communications
+XSS,a form of web application attack when a site contains some type of reflected input. Often exploited using script injection
