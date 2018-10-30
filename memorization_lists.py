@@ -61,7 +61,7 @@ def print_list():
 
 # import csvs
 # build lists
-from lists import osi
+from lists import *
 
 '''
 osi = [
@@ -73,7 +73,6 @@ osi = [
 	'data link',
 	'physical',  
 ]
-'''
 
 firewalls = [
 	'static packet filtering',
@@ -81,6 +80,7 @@ firewalls = [
 	'circuit-level gateway',
 	'stateful inspection',
 ]
+'''
 
 bcp = [
 	'scope and planning',
