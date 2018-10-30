@@ -12,6 +12,7 @@ def value_switch(a):
 		'application layer protocols': application_layer_protocols,
 		'presentation layer protocols': presentation_layer_protocols,
 		'transport layer protocols': transport_layer_protocols,
+		'network layer protocols': network_layer_protocols,
 		'firewalls': firewalls,
 		'bcp': bcp,
 		'biometrics': biometrics,
