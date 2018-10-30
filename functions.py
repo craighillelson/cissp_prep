@@ -11,6 +11,7 @@ def value_switch(a):
 		'osi layers': osi,
 		'application layer protocols': application_layer_protocols,
 		'presentation layer protocols': presentation_layer_protocols,
+		'transport layer protocols': transport_layer_protocols,
 		'firewalls': firewalls,
 		'bcp': bcp,
 		'biometrics': biometrics,

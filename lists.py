@@ -2,18 +2,19 @@ choices = {
 	'a': 'osi layers',
 	'b': 'application layer protocols',
 	'c': 'presentation layer protocols',
-	'd': 'firewalls',
-	'e': 'bcp',
-	'f': 'biometrics',
-	'g': 'data link layer protocols',
-	'h': 'session layer protocols',
-	'i': 'security models',
-	'j': 'ideal',
-	'k': 'private sector classifications',
-	'l': 'access controls',
-	'm': 'aaa services',
-	'n': 'defense in depth',
-	'o': 'cryptographic attacks',
+	'd': 'transport layer protocols',
+	'e': 'firewalls',
+	'f': 'bcp',
+	'g': 'biometrics',
+	'h': 'data link layer protocols',
+	'i': 'session layer protocols',
+	'j': 'security models',
+	'k': 'ideal',
+	'l': 'private sector classifications',
+	'm': 'access controls',
+	'n': 'aaa services',
+	'o': 'defense in depth',
+	'p': 'cryptographic attacks',
 }
 
 osi = [
@@ -51,7 +52,7 @@ presentation_layer_protocols = [
 	'MIDI',
 ]
 
-trasnport = [
+transport_layer_protocols = [
 	'TCP',
 	'UDP',
 	'SPX',
