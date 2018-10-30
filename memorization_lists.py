@@ -14,7 +14,8 @@ def choice_switch(a):
 		'i': 'private sector classifications',
 		'j': 'access controls',
 		'k': 'aaa services',
-		'l': 'defense in depth'
+		'l': 'defense in depth',
+		'm': 'cryptographic attacks',
 	}
 	return switcher.get(a, 'none')
 
@@ -32,6 +33,7 @@ def value_switch(a):
 		'access controls': access_controls,
 		'aaa services': aaa_services,
 		'defense in depth': defense_in_depth,
+		'cryptographic attacks': cryptographic_attacks,
 	}
 	return switcher.get(a, 'none')
 
@@ -160,13 +162,28 @@ defense_in_depth = [
 	'administrative controls',
 ]
 
+cryptographic_attacks = [
+	'analytic attack',
+	'implementation attack',
+	'statistical attack',
+	'brute force',
+	'frequency analysis and the ciphertext only attack',
+	'knows plaintext',
+	'chosen ciphertext',
+	'chosen plaintext',
+	'meet in the middle',
+	'man in the middle',
+	'birthday',
+	'replay',
+]
+
 corrects = []
 incorrects = []
 lst = []
 
 # prompt user
 # validate user input
-topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. privte sector classifications\nj. access controls\nk. aaa services\nl. defense in depth ")
+topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. privte sector classifications\nj. access controls\nk. aaa services\nl. defense in depth\nm. cryptographic attacks ")
 
 # run functions
 value = choice_switch(topic)
