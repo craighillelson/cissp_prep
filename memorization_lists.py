@@ -61,6 +61,9 @@ def print_list():
 
 # import csvs
 # build lists
+from lists import osi
+
+'''
 osi = [
 	'application',
 	'presentation',
@@ -70,6 +73,7 @@ osi = [
 	'data link',
 	'physical',  
 ]
+'''
 
 firewalls = [
 	'static packet filtering',
