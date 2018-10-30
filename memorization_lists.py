@@ -1,3 +1,4 @@
+# build dictionary
 choices = {
 	'a': 'osi layers',
 	'b': 'firewalls',
