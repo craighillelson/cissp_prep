@@ -1,0 +1,8 @@
+term,definition
+analytic attack,an algebraic manipulation that attempts to reduce the complexity of a cryptographic algorithm
+birthday attack,an attack in which the malicious individual seeks to substitute a digitally signed communication with a different message that produces the same message digest
+bluejacking,hijacking a Bluetooth connection to eavesdrop or extract information from devices
+DoS,a type of attack that prevents a system from processing or responding to legitimate traffic or requests for resources and objects
+DDoS,distributed denial of service
+spoofing,an attack with the goal of gaining access to a target system through the use of a falsified identity
+man in the middle,a malicious individual sits between two communicating parties and intercepts all communications
