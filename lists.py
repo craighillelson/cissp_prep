@@ -2,20 +2,23 @@ choices = {
 	'a': 'osi layers',
 	'b': 'application layer protocols',
 	'c': 'presentation layer protocols',
-	'd': 'transport layer protocols',
-	'e': 'network layer protocols',
-	'f': 'firewalls',
-	'g': 'bcp',
-	'h': 'biometrics',
-	'i': 'data link layer protocols',
-	'j': 'session layer protocols',
-	'k': 'security models',
-	'l': 'ideal',
-	'm': 'private sector classifications',
-	'n': 'access controls',
-	'o': 'aaa services',
-	'p': 'defense in depth',
-	'q': 'cryptographic attacks',
+	'd': 'session layer protocols',
+	'e': 'transport layer protocols',
+	'f': 'network layer protocols',
+	'g': 'data link layer protocols',
+	'h': 'physical layer protocols',
+	'i': 'firewalls',
+	'j': 'bcp',
+	'k': 'biometrics',
+	'l': 'data link layer protocols',
+	'm': 'session layer protocols',
+	'n': 'security models',
+	'o': 'ideal',
+	'p': 'private sector classifications',
+	'q': 'access controls',
+	'r': 'aaa services',
+	's': 'defense in depth',
+	't': 'cryptographic attacks',
 }
 
 osi = [
@@ -85,7 +88,7 @@ data_link_layer_protocols = [
 	'ISDN',
 ]
 
-physical = [
+physical_layer_protocols = [
 	'EIA/TIA-232 and EIA/TIA-449',
 	'X.21',
 	'HSSI',
