@@ -4,6 +4,7 @@ birthday attack,an attack in which the malicious individual seeks to substitute 
 bluejacking,hijacking a Bluetooth connection to eavesdrop or extract information from devices
 DoS,a type of attack that prevents a system from processing or responding to legitimate traffic or requests for resources and objects
 DDoS,distributed denial of service
+fraggle,a form of denial-of-service attack similar to smurf, but it uses UDP packets instead of ICMP
 spoofing,an attack with the goal of gaining access to a target system through the use of a falsified identity
 man in the middle,a malicious individual sits between two communicating parties and intercepts all communications
 XSS,a form of web application attack when a site contains some type of reflected input. Often exploited using script injection
