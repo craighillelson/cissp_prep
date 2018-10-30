@@ -1,18 +1,19 @@
 choices = {
 	'a': 'osi layers',
 	'b': 'application layer protocols',
-	'c': 'firewalls',
-	'd': 'bcp',
-	'e': 'biometrics',
-	'f': 'data link layer protocols',
-	'g': 'session layer protocols',
-	'h': 'security models',
-	'i': 'ideal',
-	'j': 'private sector classifications',
-	'k': 'access controls',
-	'l': 'aaa services',
-	'm': 'defense in depth',
-	'n': 'cryptographic attacks',
+	'c': 'presentation layer protocols',
+	'd': 'firewalls',
+	'e': 'bcp',
+	'f': 'biometrics',
+	'g': 'data link layer protocols',
+	'h': 'session layer protocols',
+	'i': 'security models',
+	'j': 'ideal',
+	'k': 'private sector classifications',
+	'l': 'access controls',
+	'm': 'aaa services',
+	'n': 'defense in depth',
+	'o': 'cryptographic attacks',
 }
 
 osi = [
@@ -41,7 +42,7 @@ application_layer_protocols = [
 	'SET',
 ]
 
-presentation = [
+presentation_layer_protocols = [
 	'ASCII',
 	'EBCDICM',
 	'TIFF',
