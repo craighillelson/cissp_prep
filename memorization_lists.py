@@ -1,26 +1,28 @@
+choices = {
+	'a': 'osi layers',
+	'b': 'firewalls',
+	'c': 'bcp',
+	'd': 'biometrics',
+	'e': 'data link layer protocols',
+	'f': 'session layer protocols',
+	'g': 'security models',
+	'h': 'ideal',
+	'i': 'private sector classifications',
+	'j': 'access controls',
+	'k': 'aaa services',
+	'l': 'defense in depth',
+	'm': 'cryptographic attacks',
+}
+
 # define lambda and functions
 rtn = lambda : '\n'
 
 def choice_switch(a):
-	switcher = {
-		'a': 'osi layers',
-		'b': 'firewalls',
-		'c': 'bcp',
-		'd': 'biometrics',
-		'e': 'data link layer protocols',
-		'f': 'session layer protocols',
-		'g': 'security models',
-		'h': 'ideal',
-		'i': 'private sector classifications',
-		'j': 'access controls',
-		'k': 'aaa services',
-		'l': 'defense in depth',
-		'm': 'cryptographic attacks',
-	}
-	return switcher.get(a, 'none')
+	choices
+	return choices.get(a, 'none')
 
 def value_switch(a):
-	switcher = {
+	choices = {
 		'osi layers': osi,
 		'firewalls': firewalls,
 		'bcp': bcp,
@@ -35,7 +37,7 @@ def value_switch(a):
 		'defense in depth': defense_in_depth,
 		'cryptographic attacks': cryptographic_attacks,
 	}
-	return switcher.get(a, 'none')
+	return choices.get(a, "none")
 
 def quiz(a):
 	print(rtn())
@@ -183,7 +185,16 @@ lst = []
 
 # prompt user
 # validate user input
-topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. privte sector classifications\nj. access controls\nk. aaa services\nl. defense in depth\nm. cryptographic attacks ")
+# topic = raw_input("What would you like to drill?\na. osi layers\nb. firewalls\nc. business continuity planning\nd. biometrics\ne. data link layer protocols\nf. session layer protocols\ng. security models\nh. ideal model\ni. privte sector classifications\nj. access controls\nk. aaa services\nl. defense in depth\nm. cryptographic attacks ")
+print(rtn())
+print("choices".upper())
+for k, v in choices.items():
+	print("%s %s") % (k, v)
+
+print(rtn())
+
+question = "What would you like to drill? "
+topic = raw_input(question)
 
 # run functions
 value = choice_switch(topic)
