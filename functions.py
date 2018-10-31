@@ -1,13 +1,15 @@
+# imports
+import dicts
 from lists import *
 
 rtn = lambda : '\n'
 
 def choice_switch(a):
-	choices
-	return choices.get(a, "none")
+	dicts.categories
+	return dicts.categories.get(a, "none")
 
 def value_switch(a):
-	choices = {
+	categories = {
 		'osi layers': osi,
 		'application layer protocols': application_layer_protocols,
 		'presentation layer protocols': presentation_layer_protocols,
@@ -27,7 +29,7 @@ def value_switch(a):
 		'defense in depth': defense_in_depth,
 		'cryptographic attacks': cryptographic_attacks,
 	}
-	return choices.get(a, "none")
+	return categories.get(a, "none")
 
 def quiz(a):
 	print(rtn())

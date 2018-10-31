@@ -1,26 +1,3 @@
-choices = {
-	'a': 'osi layers',
-	'b': 'application layer protocols',
-	'c': 'presentation layer protocols',
-	'd': 'session layer protocols',
-	'e': 'transport layer protocols',
-	'f': 'network layer protocols',
-	'g': 'data link layer protocols',
-	'h': 'physical layer protocols',
-	'i': 'firewalls',
-	'j': 'bcp',
-	'k': 'biometrics',
-	'l': 'data link layer protocols',
-	'm': 'session layer protocols',
-	'n': 'security models',
-	'o': 'ideal',
-	'p': 'private sector classifications',
-	'q': 'access controls',
-	'r': 'aaa services',
-	's': 'defense in depth',
-	't': 'cryptographic attacks',
-}
-
 osi = [
 	'application',
 	'presentation',
@@ -152,6 +129,8 @@ ideal = [
 	'acting',
 	'learning',
 ]
+
+# sw-cmm
 
 private_sector_classifications = [
 	'public',

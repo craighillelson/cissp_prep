@@ -1,6 +1,7 @@
 # imports
-from lists import *
+import dicts
 import functions
+from lists import *
 
 # prompt user
 # validate user input
@@ -8,7 +9,7 @@ print(functions.rtn())
 print("categories".upper())
 
 # categories
-for k, v in sorted(choices.iteritems(), key=lambda (k,v): (k,v)):
+for k, v in sorted(dicts.categories.iteritems(), key=lambda (k,v): (k,v)):
 	print("%s %s") % (k, v)
 
 print(functions.rtn())
@@ -21,6 +22,9 @@ topic = raw_input("What would you like to drill? ")
 # run functions
 value = functions.choice_switch(topic)
 a = functions.value_switch(value)
+
+print(functions.rtn())
+print("%s") % (value.upper())
 
 # loop through list, ask user to name all of them items in lst
 # if user answers correctly, add that answer to the corrects list and remove same from lst
