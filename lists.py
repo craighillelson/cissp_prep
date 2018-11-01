@@ -107,12 +107,12 @@ session_layer_protocols = [
 ]
 
 security_models = [
-	'security_models',
-	'trusted computer base',
+	'trusted computing base',
 	'state machine',
 	'information flow',
 	'noninterference',
 	'take-grant',
+	'access control matrix',
 	'bell-lapadula',
 	'biba',
 	'clark-wilson',
@@ -130,7 +130,13 @@ ideal = [
 	'learning',
 ]
 
-# sw-cmm
+swcmm = [
+	'initiating',
+	'repeatable',
+	'defined',
+	'managed',
+	'optimized',
+]
 
 private_sector_classifications = [
 	'public',
@@ -171,6 +177,16 @@ cryptographic_attacks = [
 	'man in the middle',
 	'birthday',
 	'replay',
+]
+
+incident_response_steps = [
+	'detection',
+	'response',
+	'mitigation',
+	'reporting',
+	'recovery',
+	'remediation',
+	'lessons learned',
 ]
 
 corrects = []

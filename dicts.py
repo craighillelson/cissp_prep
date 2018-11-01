@@ -14,11 +14,13 @@ categories = {
 	'm': 'session layer protocols',
 	'n': 'security models',
 	'o': 'ideal',
-	'p': 'private sector classifications',
-	'q': 'access controls',
-	'r': 'aaa services',
-	's': 'defense in depth',
-	't': 'cryptographic attacks',
+	'p': 'sw-cmm',
+	'q': 'private sector classifications',
+	'r': 'access controls',
+	's': 'aaa services',
+	't': 'defense in depth',
+	'u': 'cryptographic attacks',
+	'v': 'incident response steps',
 }
 
 '''
@@ -84,24 +86,31 @@ categories = {
 		ideal,
 	]
 	'p': [
-		'private sector classifications',
+		'sw-cmm',
+		sw-cmm,
+	'q': [
+		private sector classifications',
 		private_sector_classifications,
 	]
-	'q': [
+	'r': [
 		'access controls',
 		access_controls,
 	]
-	'r': [
+	's': [
 		'aaa services',
 		aaa_services,
 	]
-	's': [
+	't': [
 		'defense in depth',
 		defense_in_depth,
 	] 
-	't': [
+	'u': [
 		'cryptographic attacks',
 		cryptographic_attacks,
+	]
+	'v': [
+		'incident response steps',
+		incident_response_steps,
 	] 
 }
 '''

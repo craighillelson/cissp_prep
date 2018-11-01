@@ -23,11 +23,13 @@ def value_switch(a):
 		'biometrics': biometrics,
 		'security models': security_models,
 		'ideal': ideal,
+		'sw-cmm': swcmm,
 		'private sector classifications': private_sector_classifications,
 		'access controls': access_controls,
 		'aaa services': aaa_services,
 		'defense in depth': defense_in_depth,
 		'cryptographic attacks': cryptographic_attacks,
+		'incident response steps': incident_response_steps,
 	}
 	return categories.get(a, "none")
 
