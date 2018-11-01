@@ -189,6 +189,13 @@ incident_response_steps = [
 	'lessons learned',
 ]
 
+tcsec_classes = [
+	'a - verified protection',
+	'b - mandatory protection',
+	'c - discretionary protection',
+	'd - minimal protection',
+]
+
 corrects = []
 incorrects = []
 lst = []
