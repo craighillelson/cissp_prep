@@ -21,7 +21,7 @@ categories = {
 	't': 'defense in depth',
 	'u': 'cryptographic attacks',
 	'v': 'incident response steps',
-	'w': 'tcsec_categories',
+	'w': 'tcsec classes',
 }
 
 '''

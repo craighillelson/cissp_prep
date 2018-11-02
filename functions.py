@@ -30,7 +30,7 @@ def value_switch(a):
 		'defense in depth': defense_in_depth,
 		'cryptographic attacks': cryptographic_attacks,
 		'incident response steps': incident_response_steps,
-		'tcsec categories': tcsec_categories
+		'tcsec classes': tcsec_classes,
 	}
 	return categories.get(a, "none")
 

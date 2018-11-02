@@ -60,7 +60,6 @@ network_cabling_types = {
 
 # quiz user
 for k, v in sorted(network_cabling_types.iteritems()):
-	# prompt_user = raw_input(k)
 	print(k)
 	max_speed = raw_input("Max speed: ")
 	if max_speed == v[0]:
