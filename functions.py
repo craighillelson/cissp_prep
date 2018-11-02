@@ -31,11 +31,20 @@ def value_switch(a):
 		'cryptographic attacks': cryptographic_attacks,
 		'incident response steps': incident_response_steps,
 		'tcsec classes': tcsec_classes,
+		'virus propogation': virus_propogation,
 	}
 	return categories.get(a, "none")
 
 def quiz(a):
 	print(rtn())
+	hint = raw_input("Before taking the quiz, would you like to review the items in this category? ")
+	if hint == 'yes':
+		print(rtn())
+		for item in a:
+			print(item)
+	else:
+		pass
+	print(rtn())	
 	for item in a:
 		question = "Name one of the %s items " % (len(a))
 		prompt_user = raw_input(question)

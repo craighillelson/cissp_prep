@@ -196,6 +196,13 @@ tcsec_classes = [
 	'd - minimal protection',
 ]
 
+virus_propogation = [
+	'mbr',
+	'file infection',
+	'macro',
+	'service injection',
+]
+
 corrects = []
 incorrects = []
 lst = []

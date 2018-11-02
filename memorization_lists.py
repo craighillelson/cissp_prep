@@ -8,7 +8,7 @@ from lists import *
 print(functions.rtn())
 print("categories".upper())
 
-# categories
+# display categories
 for k, v in sorted(dicts.categories.iteritems(), key=lambda (k,v): (k,v)):
 	print("%s %s") % (k, v)
 
