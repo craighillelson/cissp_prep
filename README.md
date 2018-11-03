@@ -7,7 +7,7 @@ terms_and_definitions.py prompts the user to drill terms and definitions in the 
 * formulas
 * laws
 * osi
-* protocols_ports
+* protocols and ports
 
 memorization_lists.py prompts the user to name all of the elements of one of the following lists:
 
