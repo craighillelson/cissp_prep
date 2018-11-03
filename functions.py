@@ -23,7 +23,7 @@ def value_switch(a):
 		'biometrics': biometrics,
 		'security models': security_models,
 		'ideal': ideal,
-		'sw-cmm': swcmm,
+		'swcmm': swcmm,
 		'private sector classifications': private_sector_classifications,
 		'access controls': access_controls,
 		'aaa services': aaa_services,

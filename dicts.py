@@ -12,7 +12,7 @@ categories = {
 	'k': 'biometrics',
 	'l': 'security models',
 	'm': 'ideal',
-	'n': 'sw-cmm',
+	'n': 'swcmm',
 	'o': 'private sector classifications',
 	'p': 'access controls',
 	'q': 'aaa services',

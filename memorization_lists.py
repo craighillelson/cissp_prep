@@ -3,6 +3,10 @@ import dicts
 import functions
 from lists import *
 
+def print_list():
+	for item in lst:
+		print(item)
+
 # prompt user
 # validate user input
 print(functions.rtn())
@@ -34,19 +38,22 @@ functions.quiz(a)
 # for readability
 print(functions.rtn())
 
+percentage_correct = float(len(corrects)) / float(len(a))
 lst = set(a) - set(corrects)
 
 # results logic
 if len(lst) < 1:
 	print("100%!!! Great job!")
 elif len(lst) < 2:
+	print("You scored {0:.0%}".format(percentage_correct))
+	print(functions.rtn())
 	print("item for review".upper())
-	for item in lst:
-		print(item)
+	print_list()
 else:
+	print("You scored {0:.0%}".format(percentage_correct))
+	print(functions.rtn())
 	print("items for review".upper())
-	for item in lst:
-		print(item)	
+	print_list()
 
 # write results to a file
 print(functions.rtn())
