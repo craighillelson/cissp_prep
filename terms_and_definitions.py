@@ -22,7 +22,7 @@ definitions = []
 corrects = []
 incorrects = []
 
-user_choice = raw_input("What would you like to drill\na. 802.11\nb. attacks\nc.formulas\nd. laws\ne. osi\nf. protocols and ports ")
+user_choice = raw_input("What would you like to drill\na. 802.11\nb. attacks\nc. formulas\nd. laws\ne. osi\nf. protocols and ports ")
 user_choice = choice_switcher(user_choice)
 user_choice_csv = user_choice+'.csv'
 print(rtn())
