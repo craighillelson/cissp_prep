@@ -63,14 +63,14 @@ for k, v in symmetric_memorization_chart.items():
 	name = k
 	block_size = v[0]
 	key_size = v[1]
-	user_answer = raw_input("block size: ")
+	user_answer = raw_input("Block Size: ")
 	if user_answer == v[0]:
 		print_correct()
 	else:
 		print_incorrect()
 		print(v[0])
 		incorrects.append(name)
-	user_answer = raw_input("key size: ")
+	user_answer = raw_input("Key Size: ")
 	if user_answer == v[1]:
 		print_correct()
 	else:
@@ -79,6 +79,16 @@ for k, v in symmetric_memorization_chart.items():
 		incorrects.append(name)
 	print(rtn())
 
-print("items for review".upper())
-for name in incorrects:
-	print(name)
+# consolidate values in both lists
+# incorrects = set(block_size_incorrects) & set(key_size_incorrects)
+
+# results - show user what needs review
+if len(incorrects) > 0:
+	print("items for review".upper())
+	for name in set(incorrects):
+		print(name)
+else:
+	print("100%! Great job!!!")
+
+# for readability
+print(rtn())
