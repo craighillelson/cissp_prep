@@ -19,6 +19,6 @@ for item in swcmm:
 		print("correct")
 		print(rtn())
 	else:
-		print("Incorrect. The correct answer is %s") % (i)
+		print("Incorrect. The correct answer is %s") % (swcmm[i])
 		print(rtn())
 	i = i + 1
