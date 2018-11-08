@@ -26,7 +26,9 @@ for k, v in formulas.items():
 	if user_answer == v:
 		print("correct")
 	else:
-		see_answer = raw_input("Incorrect. Would you like to see the correct answer? ")
+		see_answer = raw_input(
+			"Incorrect. Would you like to see the correct answer? "
+			)
 		incorrects.append(k)
 		if see_answer == 'yes':
 			print(v)
@@ -35,6 +37,12 @@ for k, v in formulas.items():
 	print(rtn())
 
 # show user what needs review
-print("items for review".upper())
-for item in incorrects:
-	print(item)
+if len(incorrects) > 0:
+	print("items for review".upper())
+	for item in incorrects:
+		print(item)
+else:
+	print("100%! Great job!!!")
+
+# for readability
+print(rtn())
