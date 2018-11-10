@@ -12,7 +12,7 @@ def choice_to_file(a):
         'f': 'network_cabling_types.py',
         'g': 'name_that_layer.py',
         'h': 'ideal.py',
-        'i': 'swcmm.py'
+        'i': 'swcmm.py',
     }
     return switcher.get(a, 'nothing')
 
