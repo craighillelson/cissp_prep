@@ -13,6 +13,7 @@ def choice_to_file(a):
         'g': 'name_that_layer.py',
         'h': 'ideal.py',
         'i': 'swcmm.py',
+        'j': 'water_suppression_systems.py',
     }
     return switcher.get(a, 'nothing')
 
@@ -28,6 +29,7 @@ user_choice = raw_input(
     "g. which layer?\n"
     "h. ideal\n"
     "i. swcmm\n"
+    "j. water suppression systems\n"
     )
 
 # run function an load the file of the user's choice
