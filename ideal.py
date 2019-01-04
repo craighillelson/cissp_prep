@@ -1,24 +1,26 @@
+""" __doc__ """
+
 # define lambda
-rtn = lambda: '\n'
+RTN = lambda: '\n'
 
 # define ideal list
-ideal = [
-	'initiating',
-	'diagnosing',
-	'establishing',
-	'acting',
-	'learning',
-	]
+IDEAL = [
+    'initiating',
+    'diagnosing',
+    'establishing',
+    'acting',
+    'learning',
+    ]
 
 i = 0
 
 # quiz user
-for item in ideal:
-	prompt_user = raw_input("name one of the elements ")
-	if prompt_user == ideal[i]:
-		print("correct")
-		print(rtn())
-	else:
-		print("Incorrect. The correct answer is %s") % (ideal[i])
-		print(rtn())
-	i = i + 1
+for item in IDEAL:
+    prompt_user = raw_input("name one of the elements ")
+    if prompt_user == IDEAL[i]:
+        print "correct"
+        print RTN()
+    else:
+        print "Incorrect. The correct answer is %s" % (IDEAL[i])
+        print RTN()
+    i = i + 1

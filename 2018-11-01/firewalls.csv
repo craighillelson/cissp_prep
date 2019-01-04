@@ -1,0 +1,5 @@
+firewall
+static packet filtering
+application-level gateway
+circuit-level gateway
+stateful inspection

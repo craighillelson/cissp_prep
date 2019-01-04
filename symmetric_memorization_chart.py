@@ -1,56 +1,58 @@
+""" __doc__ """
+
 rtn = lambda: '\n'
 
 def print_correct():
-	print("Correct")
+    print("Correct")
 
 def print_incorrect():
-	print("Incorrect. The correct answer is: ")
+    print("Incorrect. The correct answer is: ")
 
 symmetric_memorization_chart = {
-	'Advanced Encyption Standard (AES)': [
-		'128', 
-		'128, 192, 256',
-	],
-	'Rijndael': [
-		'Variable', 
-		'128, 192, 256',
-	],
-	'Blowfish (often used in SSH)': [
-		'64', 
-		'32-448',
-	],
-	'Data Encyption Standard (DES)': [
-		'64', 
-		'56',
-	],
-	'IDEA (used in PGP)': [
-		'64', 
-		'128',
-	],
-	'Rivest Cipher 2 (RC2)': [
-		'64', 
-		'128',
-	],
-	'Rivest Cipher 4 (RC4)': [
-		'Streaming', 
-		'128',
-	],
-	'Rivest Cipher 5 (RC5)': [
-		'32, 64, 128',
-		'0-2,040',
-	],
-	'Skipjack': [
-		'64', 
-		'80',
-	],
-	'Triple DES (3DES)': [
-		'64',
-		'112 or 168',
-	],
-	'Twofish': [
-		'128', 
-		'1-256',
-	],
+    'Advanced Encyption Standard (AES)': [
+        '128',
+        '128, 192, 256',
+    ],
+    'Rijndael': [
+        'Variable', 
+        '128, 192, 256',
+    ],
+    'Blowfish (often used in SSH)': [
+        '64', 
+        '32-448',
+    ],
+    'Data Encyption Standard (DES)': [
+        '64', 
+        '56',
+    ],
+    'IDEA (used in PGP)': [
+        '64', 
+        '128',
+    ],
+    'Rivest Cipher 2 (RC2)': [
+        '64', 
+        '128',
+    ],
+    'Rivest Cipher 4 (RC4)': [
+        'Streaming', 
+        '128',
+    ],
+    'Rivest Cipher 5 (RC5)': [
+        '32, 64, 128',
+        '0-2,040',
+    ],
+    'Skipjack': [
+        '64', 
+        '80',
+    ],
+    'Triple DES (3DES)': [
+        '64',
+        '112 or 168',
+    ],
+    'Twofish': [
+        '128', 
+        '1-256',
+    ],
 }
 
 # corrects = []
@@ -59,36 +61,36 @@ incorrects = []
 print(rtn())
 
 for k, v in symmetric_memorization_chart.items():
-	print(k)
-	name = k
-	block_size = v[0]
-	key_size = v[1]
-	user_answer = raw_input("Block Size: ")
-	if user_answer == v[0]:
-		print_correct()
-	else:
-		print_incorrect()
-		print(v[0])
-		incorrects.append(name)
-	user_answer = raw_input("Key Size: ")
-	if user_answer == v[1]:
-		print_correct()
-	else:
-		print_incorrect()
-		print(v[1])
-		incorrects.append(name)
-	print(rtn())
+    print(k)
+    name = k
+    block_size = v[0]
+    key_size = v[1]
+    user_answer = raw_input("Block Size: ")
+    if user_answer == v[0]:
+        print_correct()
+    else:
+        print_incorrect()
+        print(v[0])
+        incorrects.append(name)
+    user_answer = raw_input("Key Size: ")
+    if user_answer == v[1]:
+        print_correct()
+    else:
+        print_incorrect()
+        print(v[1])
+        incorrects.append(name)
+    print(rtn())
 
 # consolidate values in both lists
 # incorrects = set(block_size_incorrects) & set(key_size_incorrects)
 
 # results - show user what needs review
 if len(incorrects) > 0:
-	print("items for review".upper())
-	for name in set(incorrects):
-		print(name)
+    print("items for review".upper())
+    for name in set(incorrects):
+        print(name)
 else:
-	print("100%! Great job!!!")
+    print("100%! Great job!!!")
 
 # for readability
 print(rtn())

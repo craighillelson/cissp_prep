@@ -1,8 +1,10 @@
+""" __doc__ """
+
 # for readability
-rtn = lambda: '\n'
+RTN = lambda: '\n'
 
 # swcmm dictionary
-swcmm = [
+SWCMM = [
     'initial',
     'repeatable',
     'defined',
@@ -13,12 +15,12 @@ swcmm = [
 i = 0
 
 # quiz user
-for item in swcmm:
+for item in SWCMM:
     prompt_user = raw_input("name one of the elements ")
-    if prompt_user == swcmm[i]:
-        print("correct")
-        print(rtn())
+    if prompt_user == SWCMM[i]:
+        print "correct"
+        print RTN()
     else:
-        print("Incorrect. The correct answer is %s") % (swcmm[i])
-        print(rtn())
+        print "Incorrect. The correct answer is %s" % (SWCMM[i])
+        print RTN()
     i = i + 1

@@ -1,0 +1,14 @@
+protocol
+HTTP
+FTP
+LPD
+SMTP
+Telnet
+TFTP
+EDI
+POP3
+IMAP
+SNMP
+NNTP
+S-RPC
+SET

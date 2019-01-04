@@ -1,11 +1,13 @@
+""" __doc__ """
+
 # for readability
-rtn = lambda: '\n'
+RTN = lambda: "\n"
 
 # header
-print("protocols and ports".upper())
+print "protocols and ports".upper()
 
 # build dictionary
-protocols_ports_dict = {
+PROTOCOLS_PORTS_DICT = {
     'FTP': '21',
     'SSH': '22',
     'Telnet': '23',
@@ -25,27 +27,27 @@ protocols_ports_dict = {
     }
 
 # create list to be populated later
-incorrects = []
+INCORRECTS = []
 
 # quiz user
-for k, v in protocols_ports_dict.items():
-    print("protocol %s") % (k)
+for k, v in PROTOCOLS_PORTS_DICT.items():
+    print "protocol %s" % (k)
     port_answer = raw_input("port ")
     if port_answer == v:
-        print("correct")
+        print "correct"
     else:
-        print("incorrect")
-        print("the correct answer is %s") % (v)
-        incorrects.append(k)
-    print(rtn())
+        print "incorrect"
+        print "the correct answer is %s" % (v)
+        INCORRECTS.append(k)
+    print RTN()
 
 # results - show user what needs review
-if len(incorrects) > 0:
-    print("items for review".upper())
-    for protocol in incorrects:
-        print(protocol)
+if len(INCORRECTS) > 0:
+    print "items for review".upper()
+    for protocol in INCORRECTS:
+        print protocol
 else:
-    print("100%! Great job!!!")
+    print "100%! Great job!!!"
 
 # for readability
-print(rtn())
+print RTN()

@@ -1,48 +1,50 @@
+""" __doc__ """
+
 # for readability
-rtn = lambda: '\n'
+RTN = lambda: '\n'
 
 # header
-print("formulas".upper())
+print "formulas".upper()
 
 # build dictionary
-formulas = {
+FORMULAS = {
     'exposure factor': '%',
     'sle': 'av * ef',
     'aro': '# / year',
     'ale': 'sle * aro or av * ef * aro',
     'acs': '$ / year',
     'value of acs': '(ale1 - ale2) - acs',
-}
+    }
 
 # create list to be populated later
-incorrects = []
+INCORRECTS = []
 
 # readability
-print(rtn())
+print RTN()
 
 # quiz user
-for k, v in formulas.items():
+for k, v in FORMULAS.items():
     user_answer = raw_input(k+" ")
     if user_answer == v:
-        print("correct")
+        print "correct"
     else:
         see_answer = raw_input(
             "Incorrect. Would you like to see the correct answer? "
             )
-        incorrects.append(k)
+        INCORRECTS.append(k)
         if see_answer == 'yes':
-            print(v)
+            print v
         else:
             pass
-    print(rtn())
+    print RTN()
 
 # show user what needs review
-if len(incorrects) > 0:
-    print("items for review".upper())
-    for item in incorrects:
-        print(item)
+if len(INCORRECTS) > 0:
+    print "items for review".upper()
+    for item in INCORRECTS:
+        print item
 else:
-    print("100%! Great job!!!")
+    print "100%! Great job!!!"
 
 # for readability
-print(rtn())
+print RTN()
