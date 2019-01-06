@@ -1,8 +1,11 @@
+""" __doc__ """
+
 # for readability
-rtn = lambda: '\n'
+RTN = lambda: '\n'
 
 # define function
-def choice_to_file(a):
+def choice_to_file(topic):
+    """ swtich """
     switcher = {
         'a': 'formulas.py',
         'b': 'protocols_ports.py',
@@ -15,10 +18,10 @@ def choice_to_file(a):
         'i': 'swcmm.py',
         'j': 'water_suppression_systems.py',
     }
-    return switcher.get(a, 'nothing')
+    return switcher.get(topic, 'nothing')
 
 # offer the user some choices of lists to drill
-user_choice = raw_input(
+USER_CHOICE = raw_input(
     "What would you like to study?\n"
     "a. formulas\n"
     "b. protocols and ports\n"
@@ -33,6 +36,6 @@ user_choice = raw_input(
     )
 
 # run function an load the file of the user's choice
-file = choice_to_file(user_choice)
-print(rtn())
-execfile(file)
+TOPIC_TO_MEM = choice_to_file(USER_CHOICE)
+print RTN()
+execfile(TOPIC_TO_MEM)

@@ -39,7 +39,7 @@ for k, v in FORMULAS.items():
     print RTN()
 
 # show user what needs review
-if len(INCORRECTS) > 0:
+if INCORRECTS:
     print "items for review".upper()
     for item in INCORRECTS:
         print item

@@ -1,40 +1,42 @@
 """ __doc__ """
 
-rtn = lambda: '\n'
+RTN = lambda: '\n'
 
 def print_correct():
-    print("Correct")
+    """ print statement """
+    print "Correct"
 
 def print_incorrect():
-    print("Incorrect. The correct answer is: ")
+    """ print statement """
+    print "Incorrect. The correct answer is: "
 
-symmetric_memorization_chart = {
+SYMMETRIC_MEMORIZATION_CHART = {
     'Advanced Encyption Standard (AES)': [
         '128',
         '128, 192, 256',
     ],
     'Rijndael': [
-        'Variable', 
+        'Variable',
         '128, 192, 256',
     ],
     'Blowfish (often used in SSH)': [
-        '64', 
+        '64',
         '32-448',
     ],
     'Data Encyption Standard (DES)': [
-        '64', 
+        '64',
         '56',
     ],
     'IDEA (used in PGP)': [
-        '64', 
+        '64',
         '128',
     ],
     'Rivest Cipher 2 (RC2)': [
-        '64', 
+        '64',
         '128',
     ],
     'Rivest Cipher 4 (RC4)': [
-        'Streaming', 
+        'Streaming',
         '128',
     ],
     'Rivest Cipher 5 (RC5)': [
@@ -42,7 +44,7 @@ symmetric_memorization_chart = {
         '0-2,040',
     ],
     'Skipjack': [
-        '64', 
+        '64',
         '80',
     ],
     'Triple DES (3DES)': [
@@ -50,18 +52,18 @@ symmetric_memorization_chart = {
         '112 or 168',
     ],
     'Twofish': [
-        '128', 
+        '128',
         '1-256',
     ],
 }
 
 # corrects = []
-incorrects = []
+INCORRECTS = []
 
-print(rtn())
+print RTN()
 
-for k, v in symmetric_memorization_chart.items():
-    print(k)
+for k, v in SYMMETRIC_MEMORIZATION_CHART.items():
+    print k
     name = k
     block_size = v[0]
     key_size = v[1]
@@ -70,27 +72,27 @@ for k, v in symmetric_memorization_chart.items():
         print_correct()
     else:
         print_incorrect()
-        print(v[0])
-        incorrects.append(name)
+        print v[0]
+        INCORRECTS.append(name)
     user_answer = raw_input("Key Size: ")
     if user_answer == v[1]:
         print_correct()
     else:
         print_incorrect()
-        print(v[1])
-        incorrects.append(name)
-    print(rtn())
+        print v[1]
+        INCORRECTS.append(name)
+    print RTN()
 
 # consolidate values in both lists
 # incorrects = set(block_size_incorrects) & set(key_size_incorrects)
 
 # results - show user what needs review
-if len(incorrects) > 0:
-    print("items for review".upper())
-    for name in set(incorrects):
-        print(name)
+if INCORRECTS:
+    print "items for review".upper()
+    for name in set(INCORRECTS):
+        print name
 else:
-    print("100%! Great job!!!")
+    print "100%! Great job!!!"
 
 # for readability
-print(rtn())
+print RTN()

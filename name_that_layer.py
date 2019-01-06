@@ -1,6 +1,8 @@
-rtn = lambda: '\n'
+""" __doc__ """
 
-protocols = {
+RTN = lambda: "\n"
+
+PROTOCOLS = {
     'HTTP': 'application',
     'FTP': 'application',
     'LPD': 'application',
@@ -53,26 +55,26 @@ protocols = {
 # print(len(protocols))
 
 # create list to be populated later
-incorrects = []
+INCORRECTS = []
 
 # quiz user
-for k, v in protocols.items():
+for k, v in PROTOCOLS.items():
     print("%s") % (k)
     which_layer = raw_input("which layer ")
     if which_layer == v:
-        print("correct")
+        print "correct"
     else:
         print("Incorrect. The correct answer is %s") % (v)
-        incorrects.append(k)
-    print(rtn())
+        INCORRECTS.append(k)
+    print RTN()
 
 # results
-if len(incorrects) > 0:
-    print("items to review".upper())
-    for protocol in incorrects:
-        print(protocol)
+if INCORRECTS:
+    print "items to review".upper()
+    for protocol in INCORRECTS:
+        print protocol
 else:
-    print("100%! Great job!!!")
+    print "100%! Great job!!!"
 
 # for readability
-print(rtn())
+print RTN()

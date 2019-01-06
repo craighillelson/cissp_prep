@@ -42,7 +42,7 @@ for k, v in PROTOCOLS_PORTS_DICT.items():
     print RTN()
 
 # results - show user what needs review
-if len(INCORRECTS) > 0:
+if INCORRECTS:
     print "items for review".upper()
     for protocol in INCORRECTS:
         print protocol

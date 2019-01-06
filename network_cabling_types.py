@@ -1,12 +1,16 @@
+""" __doc__ """
+
 # define functions
 def correct():
-    print("correct")
+    """ print statement """
+    print "correct"
 
 def incorrect():
-    print("incorrect")
+    """ print statement """
+    print "incorrect"
 
 # populate dictionary
-network_cabling_types = {
+NETWORK_CABLING_TYPES = {
     '10Base2': [
         '10 Mbps',
         '185 meters',
@@ -59,8 +63,8 @@ network_cabling_types = {
 }
 
 # quiz user
-for k, v in sorted(network_cabling_types.items()):
-    print(k)
+for k, v in sorted(NETWORK_CABLING_TYPES.items()):
+    print k
     max_speed = raw_input("Max speed: ")
     if max_speed == v[0]:
         correct()
@@ -86,4 +90,4 @@ for k, v in sorted(network_cabling_types.items()):
         correct()
     else:
         incorrect()
-    print('\n')
+    print '\n'
