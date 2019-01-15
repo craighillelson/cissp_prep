@@ -7,7 +7,7 @@ RTN = lambda: '\n'
 print "fire suppression systems".upper()
 
 # build dictionary
-water_suppression_systems_dict = {
+WATER_SUPPRESSION_SYSTEMS_DICT = {
     'wet pipe': 'full of water',
     'dry pipe': 'fills with water',
     'deluge': 'dry pipe with bigger pipes',
