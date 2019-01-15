@@ -1,5 +1,5 @@
 # for readability
-rtn = lambda: '\n'
+RTN = lambda: '\n'
 
 # header
 print "fire suppression systems".upper()
@@ -25,15 +25,15 @@ for k, v in water_suppression_systems_dict.items():
         print "incorrect"
         print "the correct answer is %s" % (v)
         incorrects.append(k)
-    print(rtn())
+    print RTN()
 
 # results - show user what needs review
 if len(incorrects) > 0:
     print "items for review".upper()
     for suppression_system in incorrects:
-        print(suppression_system)
+        print suppression_system
 else:
     print "100%! Great job!!!"
 
 # for readability
-print(rtn())
+print RTN()
