@@ -15,7 +15,7 @@ WATER_SUPPRESSION_SYSTEMS_DICT = {
     }
 
 # create list to be populated later
-incorrects = []
+INCORRECTS = []
 
 # quiz user
 for k, v in WATER_SUPPRESSION_SYSTEMS_DICT.items():
@@ -26,13 +26,13 @@ for k, v in WATER_SUPPRESSION_SYSTEMS_DICT.items():
     else:
         print "incorrect"
         print "the correct answer is %s" % (v)
-        incorrects.append(k)
+        INCORRECTS.append(k)
     print RTN()
 
 # results - show user what needs review
-if incorrects > 0:
+if INCORRECTS > 0:
     print "items for review".upper()
-    for suppression_system in incorrects:
+    for suppression_system in INCORRECTS:
         print suppression_system
 else:
     print "100%! Great job!!!"
