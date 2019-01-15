@@ -18,7 +18,7 @@ water_suppression_systems_dict = {
 incorrects = []
 
 # quiz user
-for k, v in water_suppression_systems_dict.items():
+for k, v in WATER_SUPPRESSION_SYSTEMS_DICT.items():
     print "suppression system: %s" % (k)
     definition = raw_input("definition: ")
     if definition == v:
