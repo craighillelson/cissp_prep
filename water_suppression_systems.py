@@ -1,3 +1,5 @@
+""" __doc__ """
+
 # for readability
 RTN = lambda: '\n'
 
@@ -28,7 +30,7 @@ for k, v in water_suppression_systems_dict.items():
     print RTN()
 
 # results - show user what needs review
-if len(incorrects) > 0:
+if incorrects > 0:
     print "items for review".upper()
     for suppression_system in incorrects:
         print suppression_system
