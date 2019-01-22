@@ -15,8 +15,9 @@ def choice_to_file(topic):
         'f': 'network_cabling_types.py',
         'g': 'name_that_layer.py',
         'h': 'ideal.py',
-        'i': 'swcmm.py',
-        'j': 'water_suppression_systems.py',
+        'i': 'mnemonics.py',
+        'j': 'swcmm.py',
+        'k': 'water_suppression_systems.py',
     }
     return switcher.get(topic, 'nothing')
 
