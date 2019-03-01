@@ -24,22 +24,19 @@ def choice_to_file(topic):
         }
     return switcher.get(topic, "nothing")
 
-# offer the user some choices of lists to drill
-# add functionality to alert user if the user makes an invalid choice
-USER_CHOICE = input(
-    "What would you like to study?\n"
-    "a. formulas\n"
-    "b. protocols and ports\n"
-    "c. ports and protocols\n\n"
-    # "d. symmetric memorization chart\n"
-    # "e. hash algorithm memorization chart\n"
-    # "f. network cabling types\n"
-    # "g. which layer?\n"
-    # "h. ideal\n"
-    # "i. mnemonics\n"
-    # "j. swcmm\n"
-    # "k. water suppression systems\n"
-    )
+# present user with categories
+print(RTN())
+print("categories\n".upper())
+print("a: FORMULAS\nb: PROTOCOLS_PORTS\nc: PORTS_PROTOCOLS\n")
+
+# evaluate user's respponse
+while True:
+    USER_CHOICE = input("Please pick a category from the options above.\n"
+                        ).lower().strip()
+    if USER_CHOICE not in ['a', 'b', 'c']:
+        print("invalid choice")
+    else:
+        break
 
 print(RTN())
 print(choice_to_file(USER_CHOICE))
