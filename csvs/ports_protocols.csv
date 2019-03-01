@@ -1,0 +1,15 @@
+term,definition
+21,FTP
+22,SSH
+23,Telnet
+25,SMTP
+53,DNS
+80,HTTP
+110,POP3
+123,NTP
+443,HTTPS
+1433,Microsoft SQL Server
+1521,Oracle
+1720,H.323
+1723,PPTP
+3389,RDP
