@@ -1,0 +1,6 @@
+term,definition
+SLE,av * ef
+ARO,# / year
+ALE,sle * aro or av * ef * aro
+ACS,$ / year
+VALUE OF ACS,(ale1 - ale2) - acs
