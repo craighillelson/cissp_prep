@@ -11,25 +11,26 @@ def choice_to_file(topic):
     """ swtich """
     switcher = {
         "a": "FORMULAS",
-        # "b": "protocols_ports.py",
-        # "c": "ports_protocols.py",
-        # "d": "symmetric_memorization_chart.py",
-        # "e": "hash_algorithm_memorization_chart.py",
-        # "f": "network_cabling_types.py",
-        # "g": "name_that_layer.py",
-        # "h": "ideal.py",
-        # "i": "mnemonics.py",
-        # "j": "swcmm.py",
-        # "k": "water_suppression_systems.py",
+        "b": "PROTOCOLS_PORTS",
+        "c": "PORTS_PROTOCOLS",
+        # "d": "symmetric_memorization_chart",
+        # "e": "hash_algorithm_memorization_chart",
+        # "f": "network_cabling_types",
+        # "g": "name_that_layer",
+        # "h": "ideal",
+        # "i": "mnemonics",
+        # "j": "swcmm",
+        # "k": "water_suppression_systems",
         }
     return switcher.get(topic, "nothing")
 
 # offer the user some choices of lists to drill
+# add functionality to alert user if the user makes an invalid choice
 USER_CHOICE = input(
     "What would you like to study?\n"
     "a. formulas\n"
-    # "b. protocols and ports\n"
-    # "c. ports and protocols\n"
+    "b. protocols and ports\n"
+    "c. ports and protocols\n\n"
     # "d. symmetric memorization chart\n"
     # "e. hash algorithm memorization chart\n"
     # "f. network cabling types\n"
@@ -41,21 +42,10 @@ USER_CHOICE = input(
     )
 
 print(RTN())
-print(f"You chose {choice_to_file(USER_CHOICE)}")
-print(RTN())
-# run function an load the file of the user's choice
-# TOPIC_TO_MEM = choice_to_file(USER_CHOICE)
-# execfile(TOPIC_TO_MEM)
-
-# header
-# print(USER_CHOICE.upper())
 print(choice_to_file(USER_CHOICE))
 USER_CHOICE_CSV = choice_to_file(USER_CHOICE).lower()+".csv"
-# print(USER_CHOICE_CSV)
 USER_CHOICE_DCT = choice_to_file(USER_CHOICE)+"_DCT"
 USER_CHOICE_DCT = {}
-# print(USER_CHOICE_DCT)
-
 
 def open_csv(file, dct):
     """ open csv and populate a dictionary with its contents """
@@ -86,7 +76,6 @@ for k, v in USER_CHOICE_DCT.items():
         see_answer = input("Incorrect. Would you like to see the correct " \
                            "answer? (y/n) ")
         INCORRECTS.append(k)
-        # include try statement to catch user error
         if see_answer == 'y':
             print(v)
         else:
