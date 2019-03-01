@@ -1,8 +1,0 @@
-term,definition
-layer 1,physical
-layer 2,data link
-layer 3,network
-layer 4,transport
-layer 5,session
-layer 6,presentation
-layer 7,application
