@@ -8,7 +8,7 @@ RTN = lambda: "\n"
 
 # define function
 def choice_to_file(topic):
-    """ swtich """
+    """ switch """
     switcher = {
         "a": "FORMULAS",
         "b": "PROTOCOLS_PORTS",
