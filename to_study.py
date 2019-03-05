@@ -25,6 +25,7 @@ def choice_to_file(topic):
         }
     return switcher.get(topic, "nothing")
 
+
 # present user with categories
 print(RTN())
 print("categories\n".upper())
