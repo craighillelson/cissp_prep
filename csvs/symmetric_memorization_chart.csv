@@ -1,0 +1,12 @@
+name,block_size,key_size
+Advanced Encryption Standard (AES),128,128, 192, 256
+Rijndael,Variable,128,192,256
+Blowfish (often used in SSH),64,32–448
+Data Encryption Standard (DES),64,56
+IDEA (used in PGP),64,128
+Rivest Cipher 2 (RC2),64,128
+Rivest Cipher 4 (RC4),Streaming,128
+Rivest Cipher 5 (RC5),32, 64,,128	0–2,040
+Skipjack,64,80
+Triple DES (3DES),64,112 or 168
+Twofish,128,1–256
