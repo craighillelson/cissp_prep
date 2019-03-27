@@ -14,7 +14,7 @@ def choice_to_file(topic):
         "b": "PROTOCOLS_PORTS",
         "c": "PORTS_PROTOCOLS",
         "d": "802.11",
-        # "e": "hash_algorithm_memorization_chart",
+        # "e": "SYMMETRIC_MEMORIZATION_CHART",
         # "f": "network_cabling_types",
         # "g": "name_that_layer",
         # "h": "ideal",
