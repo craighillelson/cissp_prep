@@ -67,17 +67,17 @@ INCORRECTS = []
 print(RTN())
 
 # quiz user
-for k, v in USER_CHOICE_DCT.items():
-    user_answer = input(k+" ")
-    if user_answer == v:
+for term, definition in USER_CHOICE_DCT.items():
+    user_answer = input(term+" ")
+    if user_answer == definition:
         print("correct")
         print(RTN())
     else:
         see_answer = input("Incorrect. Would you like to see the correct " \
                            "answer? (y/n) ")
-        INCORRECTS.append(k)
+        INCORRECTS.append(term)
         if see_answer == 'y':
-            print(v)
+            print(definition)
         else:
             pass
         print(RTN())
