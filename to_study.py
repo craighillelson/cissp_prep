@@ -14,14 +14,15 @@ def choice_to_file(topic):
         "b": "PROTOCOLS_PORTS",
         "c": "PORTS_PROTOCOLS",
         "d": "802.11",
-        # "e": "SYMMETRIC_MEMORIZATION_CHART",
-        # "f": "network_cabling_types",
-        # "g": "name_that_layer",
-        # "h": "ideal",
-        # "i": "mnemonics",
-        # "j": "swcmm",
-        # "k": "water_suppression_systems",
-        # "l": "symmetric encryption block and key sizes",
+        "e": "ATTACKS",
+        # "f": "SYMMETRIC_MEMORIZATION_CHART",
+        # "g": "network_cabling_types",
+        # "h": "name_that_layer",
+        # "i": "ideal",
+        # "j": "mnemonics",
+        # "k": "swcmm",
+        # "l": "water_suppression_systems",
+        # "m": "symmetric encryption block and key sizes",
         }
     return switcher.get(topic, "nothing")
 
@@ -30,13 +31,13 @@ def choice_to_file(topic):
 print(RTN())
 print("categories\n".upper())
 print("a: FORMULAS\nb: PROTOCOLS_PORTS\nc: PORTS_PROTOCOLS\n" \
-      "d. 802.11")
+      "d. 802.11\ne. ATTACKS")
 
 # evaluate user's respponse
 while True:
     USER_CHOICE = input("Please pick a category from the options above.\n"
                         ).lower().strip()
-    if USER_CHOICE not in ['a', 'b', 'c', 'd']:
+    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e',]:
         print("invalid choice")
     else:
         break
