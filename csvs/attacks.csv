@@ -1,10 +1,10 @@
 term,definition
-analytic attack,an algebraic manipulation that attempts to reduce the complexity of a cryptographic algorithm
-birthday attack,an attack in which the malicious individual seeks to substitute a digitally signed communication with a different message that produces the same message digest
-bluejacking,hijacking a Bluetooth connection to eavesdrop or extract information from devices
-DoS,a type of attack that prevents a system from processing or responding to legitimate traffic or requests for resources and objects
-DDoS,distributed denial of service
-fraggle,a form of denial-of-service attack similar to smurf, but it uses UDP packets instead of ICMP
-spoofing,an attack with the goal of gaining access to a target system through the use of a falsified identity
-man in the middle,a malicious individual sits between two communicating parties and intercepts all communications
-XSS,a form of web application attack when a site contains some type of reflected input. Often exploited using script injection
+an algebraic manipulation that attempts to reduce the complexity of a cryptographic algorithm,analytic attack
+an attack in which the malicious individual seeks to substitute a digitally signed communication with a different message that produces the same message digest,birthday attack
+hijacking a Bluetooth connection to eavesdrop or extract information from devices,bluejacking
+a type of attack that prevents a system from processing or responding to legitimate traffic or requests for resources and objects,DoS
+distributed denial of service,DDoS
+"a form of denial-of-service attack similar to smurf, but it uses UDP packets instead of ICMP",fraggle
+an attack with the goal of gaining access to a target system through the use of a falsified identity,spoofing
+a malicious individual sits between two communicating parties and intercepts all communications,man in the middle
+a form of web application attack when a site contains some type of reflected input. Often exploited using script injection,XSS
