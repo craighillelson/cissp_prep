@@ -15,10 +15,10 @@ def choice_to_file(topic):
         "c": "PORTS_PROTOCOLS",
         "d": "802.11",
         "e": "ATTACKS",
-        # "f": "SYMMETRIC_MEMORIZATION_CHART",
-        # "g": "network_cabling_types",
-        # "h": "name_that_layer",
-        # "i": "ideal",
+        "f": "IDEAL",
+        # "g": "SYMMETRIC_MEMORIZATION_CHART",
+        # "h": "network_cabling_types",
+        # "i": "name_that_layer",
         # "j": "mnemonics",
         # "k": "swcmm",
         # "l": "water_suppression_systems",
@@ -31,13 +31,13 @@ def choice_to_file(topic):
 print(RTN())
 print("categories\n".upper())
 print("a: FORMULAS\nb: PROTOCOLS_PORTS\nc: PORTS_PROTOCOLS\n" \
-      "d. 802.11\ne. ATTACKS")
+      "d. 802.11\ne. ATTACKS\nf. IDEAL")
 
 # evaluate user's respponse
 while True:
     USER_CHOICE = input("Please pick a category from the options above.\n"
                         ).lower().strip()
-    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e',]:
+    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e', 'f',]:
         print("invalid choice")
     else:
         break
