@@ -38,7 +38,6 @@ print("\na: BCP FORMULAS\n\nNETWORKING\nb: PROTOCOLS_PORTS\n"\
 while True:
     USER_CHOICE = input("Please pick a category from the options above.\n"
                         ).lower().strip()
-
     if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e', 'f', 'g',]:
         print("invalid choice")
     else:
