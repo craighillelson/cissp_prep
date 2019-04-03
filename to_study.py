@@ -15,12 +15,12 @@ def choice_to_file(topic):
         "c": "PORTS_PROTOCOLS",
         "d": "802.11",
         "e": "ATTACKS",
-        # "f": "SYMMETRIC_MEMORIZATION_CHART",
-        # "g": "network_cabling_types",
-        # "h": "name_that_layer",
-        # "i": "ideal",
-        # "j": "mnemonics",
-        # "k": "swcmm",
+        "f": "IDEAL",
+        "g": "SW-CMM",
+        # "h": "SYMMETRIC_MEMORIZATION_CHART",
+        # "i": "network_cabling_types",
+        # "j": "name_that_layer",
+        # "k": "mnemonics",
         # "l": "water_suppression_systems",
         # "m": "symmetric encryption block and key sizes",
         }
@@ -30,14 +30,15 @@ def choice_to_file(topic):
 # present user with categories
 print(RTN())
 print("categories\n".upper())
-print("a: FORMULAS\nb: PROTOCOLS_PORTS\nc: PORTS_PROTOCOLS\n" \
-      "d. 802.11\ne. ATTACKS")
+print("\na: BCP FORMULAS\n\nNETWORKING\nb: PROTOCOLS_PORTS\n"\
+      "c: PORTS_PROTOCOLS\nd. 802.11\n\ne. ATTACKS\n\nMATURITY MODELS\n"\
+      "f. IDEAL\ng. SW-CMM\n")
 
 # evaluate user's respponse
 while True:
     USER_CHOICE = input("Please pick a category from the options above.\n"
                         ).lower().strip()
-    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e',]:
+    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e', 'f', 'g',]:
         print("invalid choice")
     else:
         break
