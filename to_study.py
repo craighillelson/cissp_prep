@@ -11,13 +11,14 @@ def choice_to_file(topic):
     """ switch """
     switcher = {
         "a": "FORMULAS",
-        "b": "PROTOCOLS_PORTS",
-        "c": "PORTS_PROTOCOLS",
-        "d": "802.11",
-        "e": "NAME_THAT_LAYER",
-        "f": "ATTACKS",
-        "g": "IDEAL",
-        "h": "SW-CMM",
+        "b": "FIRE_EXTINGUISHERS",
+        "c": "PROTOCOLS_PORTS",
+        "d": "PORTS_PROTOCOLS",
+        "e": "802.11",
+        "f": "NAME_THAT_LAYER",
+        "g": "ATTACKS",
+        "h": "IDEAL",
+        "i": "SW-CMM",
         # "i": "SYMMETRIC_MEMORIZATION_CHART",
         # "j": "network_cabling_types",
         # "k": "mnemonics",
@@ -30,16 +31,17 @@ def choice_to_file(topic):
 # present user with categories
 print(RTN())
 print("categories\n".upper())
-print("\nBUSINESS CONTINUITY AND DISASTER RECOVERY PLANNING\n\n"\
-      "a. BCP FORMULAS\n\nNETWORKING\nb. PROTOCOLS PORTS\n"\
-      "c. PORTS PROTOCOLS\nd. 802.11\ne. NAME THAT LAYER\n\nf. ATTACKS\n\n"\
-      "MATURITY MODELS\ng. IDEAL\nh. SW-CMM\n")
+print("\nBUSINESS CONTINUITY AND DISASTER RECOVERY PLANNING\n"\
+      "a. BCP FORMULAS\nb. FIRE EXTINGUISHER TYPES\n\nNETWORKING\n"\
+      "c. PROTOCOLS PORTS\nd. PORTS PROTOCOLS\ne. 802.11\n"\
+      "f. NAME THAT LAYER\n\ng. ATTACKS\n\nMATURITY MODELS\nh. IDEAL\n"\
+      "i. SW-CMM\n")
 
 # evaluate user's respponse
 while True:
     USER_CHOICE = input("Please pick a category from the options above.\n"
                         ).lower().strip()
-    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',]:
+    if USER_CHOICE not in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']:
         print("invalid choice")
     else:
         break
