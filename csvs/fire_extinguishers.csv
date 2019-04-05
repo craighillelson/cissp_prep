@@ -1,5 +1,5 @@
 term,definition
-A,common combustibles
-B,liquids
-C,electrical
-D,metal
+Type A,common combustibles
+Type B,liquids
+Type C,electrical
+Type D,metal
