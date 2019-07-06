@@ -1,3 +1,8 @@
 term,definition
+EIA/TIA-232 and EIA/TIA-449,physical
+X.21,physical
+High-Speed Serial Interface (HSSI),physical
+Synchronous Optical Network (SONET),physical
+V.24 and V.35,physical
 NFS,session
 TCP,transport
