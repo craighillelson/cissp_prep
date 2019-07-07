@@ -4,5 +4,13 @@ X.21,physical
 High-Speed Serial Interface (HSSI),physical
 Synchronous Optical Network (SONET),physical
 V.24 and V.35,physical
+Serial Line Internet Protocol,data link
+Point-to-Point Protocol (PPP),data link
+Address Resolution Protocol (ARP),data link
+Reverse Address Resolution Protocol (RARP),data link
+Layer 2 Forwarding (L2F),data link
+Layer 2 Tunneling Protocol (L2TP),data link
+Point-to-Point Tunneling Protocol (PPTP),data link
+Integrated Services Digital Network (ISDN),data link
 NFS,session
 TCP,transport
