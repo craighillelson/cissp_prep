@@ -12,5 +12,6 @@ Layer 2 Forwarding (L2F),data link
 Layer 2 Tunneling Protocol (L2TP),data link
 Point-to-Point Tunneling Protocol (PPTP),data link
 Integrated Services Digital Network (ISDN),data link
+Internet Control Message Protocol (ICMP),network
 NFS,session
 TCP,transport
