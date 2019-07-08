@@ -14,5 +14,13 @@ Point-to-Point Tunneling Protocol (PPTP),data link
 Integrated Services Digital Network (ISDN),data link
 Internet Control Message Protocol (ICMP),network
 Routing Information Protocol (RIP),network
+Open Shortest Path First (OSPF),network
+Border Gateway Protocol (BGP),network
+Internet Group Management Protocol (IGMP),network
+Internet Protocol (IP),network
+Internet Protocol Security (IPSec),network
+Internetwork Packet Exchange (IPX),network
+Network Address Translation (NAT),network
+Simple Key Management for Internet Protocols (SKIP),network
 NFS,session
 TCP,transport
