@@ -22,5 +22,10 @@ Internet Protocol Security (IPSec),network
 Internetwork Packet Exchange (IPX),network
 Network Address Translation (NAT),network
 Simple Key Management for Internet Protocols (SKIP),network
+Transmission Control Protocol (TCP),transport
+User Datagram Protocol (UDP),transport
+Sequenced Packet Exchange (SPX),transport
+Secure Sockets Layer (SSL),transport
+Transport Layer Security (TLS),transport
 NFS,session
 TCP,transport
