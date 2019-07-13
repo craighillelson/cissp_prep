@@ -36,3 +36,16 @@ Tagged Image File Format (TIFF),presentation
 Joint Photographic Experts Group (JPEG),presentation
 Moving Picture Experts Group (MPEG),presentation
 Musical Instrument Digital Interface (MIDI),presentation
+Hypertext Transfer Protocol (HTTP),application
+File Transfer Protocol (FTP),application
+Line Print Daemon (LPD),application
+Simple Mail Transfer Protocol (SMTP),application
+Telnet,application
+Trivial File Transfer Protocol (TFTP),application
+Electronic Data Interchange (EDI),application
+Post Office Protocol version 3 (POP3),application
+Internet Message Access Protocol (IMAP),application
+Simple Network Management Protocol (SNMP),application
+Network News Transport Protocol (NNTP),application
+Secure Remote Procedure Call (S-RPC),application
+Secure Electronic Transaction (SET),application
