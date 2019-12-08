@@ -1,6 +1,6 @@
 # Overview
 
-to_study.py is a Python 3.7.2 script that prompts the user to drill BCP formulas, ports and their associated protocols (and vice versa) covered in the [CISSP study materials](https://www.amazon.com/Certified-Information-Security-Professional-Official/dp/1119475937/ref=dp_rm_title_0).
+to_study.py is a Python 3.8 script that prompts the user to drill BCP formulas, ports and their associated protocols (and vice versa) covered in the [CISSP study materials](https://www.amazon.com/Certified-Information-Security-Professional-Official/dp/1119475937/ref=dp_rm_title_0).
 
 # Instructions
 
