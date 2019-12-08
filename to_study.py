@@ -63,7 +63,7 @@ def open_csv(file, dct):
             dct[row.term] = row.definition
 
 
-open_csv(f"csvs/{USER_CHOICE_CSV}", USER_CHOICE_DCT)
+open_csv(f'csvs/{USER_CHOICE_CSV}', USER_CHOICE_DCT)
 
 # create list to be populated later
 INCORRECTS = []
@@ -73,13 +73,13 @@ print(RTN())
 
 # quiz user
 for term, definition in USER_CHOICE_DCT.items():
-    user_answer = input(term+" ")
+    user_answer = input(term+' ')
     if user_answer == definition:
-        print("correct")
+        print('correct')
         print(RTN())
     else:
-        see_answer = input("Incorrect. Would you like to see the correct " \
-                           "answer? (y/n) ")
+        see_answer = input('Incorrect. Would you like to see the correct ' \
+                           'answer? (y/n) ')
         INCORRECTS.append(term)
         if see_answer == 'y':
             print(definition)
@@ -90,11 +90,11 @@ print(RTN())
 
 # show user what needs review
 if INCORRECTS:
-    print("items for review".upper())
+    print('items for review'.upper())
     for item in INCORRECTS:
         print(item)
 else:
-    print("100%! Great job!!!")
+    print('100%! Great job!!!')
 
 # for readability
 print(RTN())
